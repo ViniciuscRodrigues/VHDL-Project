@@ -2,7 +2,6 @@
 
 Este repositório contém uma coleção de componentes VHDL desenvolvidos para fins de estudo e prática. Cada componente está localizado em sua própria pasta, contendo o código-fonte (RTL), um testbench para verificação e uma imagem do resultado da simulação.
 
-Este projeto foi desenvolvido com o auxílio do Google Gemini, conforme o histórico de conversa [neste link](https://g.co/gemini/share/d6f7c5c786bf).
 
 ## Ferramentas Utilizadas
 
@@ -104,4 +103,5 @@ ghdl -r transmissor_tb --vcd=transmitter.vcd
 
 # Visualização
 gtkwave transmitter.vcd
+
 ```
