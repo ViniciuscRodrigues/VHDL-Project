@@ -1,0 +1,12 @@
+# Arquivos de compilação do GHDL
+*.cf
+*.o
+*work*
+*~
+
+# Arquivos de onda de simulação (VCD)
+*.vcd
+
+# Outros arquivos de ferramentas
+*.log
+*.jou
