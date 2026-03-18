@@ -44,11 +44,11 @@ Observe que no intervalo de 100ns a 200ns, `sai` segue corretamente a transiçã
 
 ### 2. Decodificador N-bit (`02_decoder_n_bit`)
 
-[cite_start]Um decodificador genérico que recebe uma entrada de `N` bits e ativa uma de `2^N` saídas. O componente foi implementado com duas arquiteturas distintas para fins de comparação:
-1.  [cite_start]`n_bit_d_of`: Utiliza um bloco `process`.
-2.  [cite_start]`n_bit_d_generate`: Utiliza uma estrutura concorrente `for-generate`. 
+Um decodificador genérico que recebe uma entrada de `N` bits e ativa uma de `2^N` saídas. O componente foi implementado com duas arquiteturas distintas para fins de comparação:
+1.  `n_bit_d_of`: Utiliza um bloco `process`.
+2.  `n_bit_d_generate`: Utiliza uma estrutura concorrente `for-generate`. 
 
-[cite_start]O testbench instancia e simula ambas as arquiteturas com `N=4`.
+O testbench instancia e simula ambas as arquiteturas com `N=4`.
 
 * **`n_bit_d.vhd`**: Código RTL do decodificador com as duas arquiteturas.
 * **`n_bit_d_tb.vhd`**: Testbench para `N=4`.
@@ -60,8 +60,8 @@ Observe que no intervalo de 100ns a 200ns, `sai` segue corretamente a transiçã
 
 [cite_start]Uma Máquina de Estados Finitos (FSM) que implementa um transmissor serial assíncrono. Ao receber um sinal `send`, ela transmite uma palavra de 8 bits (`palavra`) pela `linha` serial , seguindo um protocolo com start bit , 8 bits de dados e stop bit. A saída `busy` indica quando a transmissão está em andamento. 
 
-* [cite_start]**`transmissor.vhd`**: Código RTL da FSM do transmissor. 
-* [cite_start]**`transmissor_tb.vhd`**: Testbench que envia duas palavras diferentes para verificar a FSM. 
+* **`transmissor.vhd`**: Código RTL da FSM do transmissor. 
+* **`transmissor_tb.vhd`**: Testbench que envia duas palavras diferentes para verificar a FSM. 
 
 #### Simulação
 ![Simulação do Transmissor](03_serial_transmitter_fsm/simulation_result.png)
